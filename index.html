@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Curl Up & Dye | Boutique Hair Salon & Spa | Branson, MO</title>
+    
+    <!-- Design Typography Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind Engine Integration -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-bronze": "#c5a059",
+                        "brand-accent": "#e3c185",
+                        "surface-dark": "#121110",
+                        "panel-dark": "#1a1917",
+                        "border-bronze": "#3d362a"
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Hanken Grotesk", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .smooth-transition { transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        
+        @keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+        .text-shimmer {
+            background: linear-gradient(110deg, #c5a059 20%, #fff 50%, #c5a059 80%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer 6s linear infinite;
+        }
+
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { opacity: 0; animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="bg-[#0b0a0a] text-[#e8e6e3] font-body antialiased min-h-screen flex flex-col overflow-x-hidden scroll-smooth">
+
+    <!-- NAVIGATION HEADER -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#121110]/90 backdrop-blur-md border-b border-neutral-800/40 flex justify-between items-center px-6 md:px-16 py-4 max-w-screen-2xl mx-auto smooth-transition">
+        <div class="font-display text-xl md:text-2xl font-bold tracking-tight text-white">
+            CURL UP & DYE
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-xs uppercase tracking-widest text-neutral-400 hover:text-brand-bronze smooth-transition font-semibold" href="#services">Transparent Menu</a>
+            <a class="text-xs uppercase tracking-widest text-neutral-400 hover:text-brand-bronze smooth-transition font-semibold" href="#portfolio">Our Studio Space</a>
+            <a class="text-xs uppercase tracking-widest text-neutral-400 hover:text-brand-bronze smooth-transition font-semibold" href="#location">Find Us</a>
+        </div>
+        <a href="#services" class="text-xs uppercase tracking-widest px-5 py-2.5 border border-brand-bronze text-brand-bronze hover:bg-brand-bronze hover:text-black rounded-lg smooth-transition font-bold shadow-lg shadow-brand-bronze/5">
+            View Pricing Menu
+        </a>
+    </nav>
+
+    <!-- CINEMATIC HERO SECTION -->
+    <section class="relative min-h-[85vh] flex items-center px-6 md:px-16 overflow-hidden bg-neutral-950 pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN3-Z35GidqfKz2OId543uX9K9A-99B3O0643uX=s1600-w1600" class="w-full h-full object-cover opacity-20 scale-105" alt="Curl Up & Dye Boutique Parlor Space">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0b0a0a] via-[#0b0a0a]/90 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full w-fit animate-fade-in">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-bronze animate-pulse"></span>
+                <span class="text-[10px] font-mono text-neutral-300 tracking-widest uppercase">The Victorian Village • Branson, MO</span>
+            </div>
+            <h1 class="font-display text-4xl md:text-6xl text-white font-bold leading-tight animate-fade-in delay-1">
+                Bespoke Styling.<br><span class="text-shimmer italic font-light">Boutique Luxury.</span>
+            </h1>
+            <p class="text-base md:text-lg text-neutral-400 max-w-xl leading-relaxed animate-fade-in delay-2">
+                Welcome to Curl Up & Dye. Experience a high-end parlor atmosphere, specialized dimensional color masterclasses, and tailored cutting rituals designed explicitly for you inside our custom Victorian Village retreat[span_0](start_span)[span_0](end_span).
+            </p>
+            <div class="flex flex-wrap gap-4 mt-2 animate-fade-in delay-3">
+                <a href="#services" class="bg-brand-bronze text-black px-8 py-4 font-bold text-xs uppercase tracking-widest rounded-lg hover:bg-brand-accent transition-all shadow-xl shadow-brand-bronze/10 smooth-transition">
+                    Explore Transparent Rates
+                </a>
+                <a href="tel:+14173392875" class="px-8 py-4 font-bold text-xs uppercase tracking-widest rounded-lg border border-neutral-700 text-white hover:bg-white/5 smooth-transition flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">phone</span> Call Studio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SOLUTION: TRANSPARENT PRICING GRID -->
+    <section id="services" class="py-24 px-6 md:px-16 bg-[#121110] border-y border-neutral-900">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs font-mono text-brand-bronze uppercase tracking-widest font-semibold bg-brand-bronze/5 px-3 py-1 rounded-full border border-brand-bronze/10">Value Transparency</span>
+                <h2 class="font-display text-3xl md:text-4xl text-white font-bold mt-3">The Menu & Rates</h2>
+                <p class="text-neutral-400 text-sm max-w-md mx-auto mt-2">Bespoke pricing structures engineered upfront with zero hidden tiers[span_1](start_span)[span_1](end_span). Know exactly what you invest in your hair health before your visit.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="p-6 bg-[#1a1917] rounded-xl border border-neutral-800/40 flex justify-between items-center hover:border-brand-bronze/30 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-semibold text-lg group-hover:text-brand-bronze smooth-transition">Signature Tailored Cut</h4>
+                        <p class="text-xs text-neutral-500 mt-1 max-w-xs">Includes specialized texture canvas analysis, relaxing herbal scalp wash, massage, and artisan finish.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold font-display text-brand-bronze block">$85+</span>
+                        <span class="text-[10px] font-mono text-neutral-500">60 Min</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-6 bg-[#1a1917] rounded-xl border border-neutral-800/40 flex justify-between items-center hover:border-brand-bronze/30 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-semibold text-lg group-hover:text-brand-bronze smooth-transition">Full Dimensional Balayage</h4>
+                        <p class="text-xs text-neutral-500 mt-1 max-w-xs">Artisanal dynamic hand-painted blending tailored entirely to balance face shape, skin depth, and lifestyle.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold font-display text-brand-bronze block">$210+</span>
+                        <span class="text-[10px] font-mono text-neutral-500">180 Min</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 bg-[#1a1917] rounded-xl border border-neutral-800/40 flex justify-between items-center hover:border-brand-bronze/30 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-semibold text-lg group-hover:text-brand-bronze smooth-transition">Partial Highlight System</h4>
+                        <p class="text-xs text-neutral-500 mt-1 max-w-xs">Targeted luminosity mapping along part lines and frame layers. Finished with structural toning glazes.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold font-display text-brand-bronze block">$145+</span>
+                        <span class="text-[10px] font-mono text-neutral-500">120 Min</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 bg-[#1a1917] rounded-xl border border-neutral-800/40 flex justify-between items-center hover:border-brand-bronze/30 smooth-transition group">
+                    <div>
+                        <h4 class="text-white font-semibold text-lg group-hover:text-brand-bronze smooth-transition">Premium Glossing & Blowout</h4>
+                        <p class="text-xs text-neutral-500 mt-1 max-w-xs">Deep repair processing mask sealed under luxury custom blowout styling for reflective mirror shine.</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold font-display text-brand-bronze block">$120+</span>
+                        <span class="text-[10px] font-mono text-neutral-500">75 Min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STUDIO PORTFOLIO SHOWCASING ACTUAL STOREFRONT IMAGES -->
+    <section id="portfolio" class="py-24 px-6 md:px-16 max-w-7xl mx-auto w-full">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-neutral-800 pb-6">
+            <div>
+                <h3 class="font-display text-3xl font-bold text-white">Inside Our Branson Studio</h3>
+                <p class="text-neutral-400 text-sm mt-2">Take a virtual walk through our cozy, premium relaxation lounge and styling floor[span_2](start_span)[span_2](end_span).</p>
+            </div>
+            <span class="text-xs text-neutral-500 font-mono tracking-wider mt-4 md:mt-0">@curlupanddyebranson</span>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="aspect-[4/3] sm:aspect-square bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group cursor-pointer smooth-transition">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipN3-Z35GidqfKz2OId543uX9K9A-99B3O0643uX=s1000" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" alt="Curl Up & Dye Styling Stations">
+            </div>
+            <div class="aspect-[4/3] sm:aspect-square bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group cursor-pointer smooth-transition">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNzI0fXm3wG96pQc3U6n79r4f_Zisv8-YqVstUu=s1000" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" alt="Luxury Reception and Product Matrix">
+            </div>
+            <div class="aspect-[4/3] sm:aspect-square bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group cursor-pointer smooth-transition">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOFp-mQ7D_KxX_IeD2Y7pCH8p6M5Zk5I01tYswD=s1000" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" alt="Main Floor Panorama">
+            </div>
+            <div class="aspect-[4/3] sm:aspect-square bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden group cursor-pointer smooth-transition">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipM-2gYn0G9u8v7p9b6r4v5O5m4K5g5K5G5K5G5K=s1000" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" alt="Relaxation Lounge Sofa Seating">
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: INTERACTIVE LOCATION MODULE + LIVE GOOGLE MAPS EMBED -->
+    <section id="location" class="py-24 px-6 md:px-16 bg-[#1a1917] border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Info Panel -->
+            <div class="lg:col-span-5 flex flex-col gap-6">
+                <span class="text-xs font-mono text-brand-bronze uppercase tracking-widest font-semibold">Plan Your Visit</span>
+                <h3 class="font-display text-3xl md:text-4xl text-white font-bold">Studio Hours & Location</h3>
+                <p class="text-neutral-400 text-sm leading-relaxed">
+                    We are located inside the beautiful historic **Victorian Village** shopping arcade on the Shepherd of the Hills Expressway. Plenty of easy parking is accessible directly outside our entryway.
+                </p>
+                
+                <div class="flex flex-col gap-4 mt-2">
+                    <div class="flex gap-4 items-start">
+                        <span class="material-symbols-outlined text-brand-bronze mt-1">location_on</span>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">Physical Address</h5>
+                            <p class="text-xs text-neutral-400 mt-1 font-mono">3044 Shepherd of the Hills Expy<br>Branson, MO 65616</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <span class="material-symbols-outlined text-brand-bronze mt-1">schedule</span>
+                        <div>
+                            <h5 class="text-white font-semibold text-sm">Operating Hours</h5>
+                            <p class="text-xs text-neutral-400 mt-1 font-mono">Mon — Fri: 9:00 AM — 7:00 PM<br>Sat & Sun: By Appointment Only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="https://maps.google.com/?q=3044+Shepherd+of+the+Hills+Expy+Branson+MO" target="_blank" class="w-fit text-xs font-bold uppercase tracking-widest text-brand-bronze border border-brand-bronze/40 px-6 py-3 rounded-lg hover:bg-brand-bronze hover:text-black smooth-transition mt-4">
+                    Open in Navigation App
+                </a>
+            </div>
+            
+            <!-- Right Embedded Maps Core Content Box -->
+            <div class="lg:col-span-7 h-[400px] w-full rounded-2xl overflow-hidden border border-border-bronze shadow-2xl relative bg-neutral-950">
+                <iframe 
+                    class="w-full h-full border-0 grayscale opacity-80 contrast-[1.1] invert-[0.9]" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.4211100237734!2d-93.27581292349789!3d36.66442657228646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!1s0x87cf1fb8fdfb5555%3A0xb690bc4bd18b855!2sCurl%20Up%20%26%20Dye!5e0!3m2!1sen!2s!4v1717255100000!5m2!1sen!2s" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- TRUST VALIDATION -->
+    <section class="py-20 px-6 md:px-16 bg-neutral-950 border-t border-neutral-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="text-xs font-mono text-brand-bronze uppercase tracking-widest font-semibold">Verified Client Experiences</span>
+            <h3 class="font-display text-3xl text-white font-bold mt-2 mb-12">Bespoke Validation</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="p-6 bg-[#121110] border border-neutral-800/40 rounded-xl relative">
+                    <span class="text-5xl font-serif text-white/5 absolute top-2 left-4">“</span>
+                    <p class="text-sm text-neutral-300 relative z-10 leading-relaxed">Absolute technical perfection. The staff is so accommodating and welcoming. Having access to upfront pricing menus completely changed my booking confidence[span_3](start_span)[span_3](end_span).</p>
+                    <div class="mt-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-bronze"></div><span class="text-xs font-bold text-white">Jessica R.</span></div>
+                </div>
+                <div class="p-6 bg-[#121110] border border-neutral-800/40 rounded-xl relative">
+                    <span class="text-5xl font-serif text-white/5 absolute top-2 left-4">“</span>
+                    <p class="text-sm text-neutral-300 relative z-10 leading-relaxed">The only parlor I trust in Branson with my hair color treatments. Impeccable care parameters, beautiful cozy physical environment, and top-tier styling results[span_4](start_span)[span_4](end_span).</p>
+                    <div class="mt-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-bronze"></div><span class="text-xs font-bold text-white">Amanda T.</span></div>
+                </div>
+                <div class="p-6 bg-[#121110] border border-neutral-800/40 rounded-xl relative">
+                    <span class="text-5xl font-serif text-white/5 absolute top-2 left-4">“</span>
+                    <p class="text-sm text-neutral-300 relative z-10 leading-relaxed">So happy to see a clear menu layout breakdown online. Finding a specialized artisan parlor of this tier in the lake resort area makes visiting painless[span_5](start_span)[span_5](end_span).</p>
+                    <div class="mt-4 flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-bronze"></div><span class="text-xs font-bold text-white">Sarah M.</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND FOOTER -->
+    <footer class="py-16 px-6 md:px-16 bg-[#0b0a0a] border-t border-neutral-900 mt-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8 max-w-7xl mx-auto w-full">
+            <div>
+                <h4 class="font-display text-2xl text-white font-bold">CURL UP & DYE</h4>
+                <p class="text-xs text-neutral-500 mt-1">Premium Spatial Aesthetics & Color Masters — The Victorian Village, Branson[span_6](start_span)[span_6](end_span)</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+                <span class="text-xs font-mono text-neutral-400">Call For Reservations:</span>
+                <a href="tel:+14173392875" class="text-sm font-mono text-brand-bronze hover:text-white border border-neutral-800 px-5 py-2.5 rounded-xl bg-[#121110] smooth-transition flex items-center gap-2 font-bold shadow-lg shadow-black/50">
+                    <span class="material
